@@ -1,10 +1,12 @@
+var path = require('path');
+
 
 /*
  * GET home page.
  */
 
 exports.index = function(req, res){
-  res.render('index');
+  res.sendfile(path.resolve('public/index.html'));
 };
 
 exports.partials = function (req, res) {
