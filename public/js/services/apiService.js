@@ -13,11 +13,11 @@ ApiService.prototype.requestVotes = function(postal_code) {
 	var self = this;
 
 	console.log(postal_code);
-	debugger;
 
 	return self.http.get('/api/votes/' + postal_code)
 		.then(function(response) {
 			console.log('successful votes call');
+			console.log(response);
 		})
 		.catch(function(response) {
 			console.log('unsuccessful votes call')
