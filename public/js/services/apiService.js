@@ -17,7 +17,8 @@ ApiService.prototype.requestVotes = function(postal_code) {
 	return self.http.get('/api/votes/' + postal_code)
 		.then(function(response) {
 			console.log('successful votes call');
-			console.log(response);
+			console.log(response.data);
+			return response.data;
 		})
 		.catch(function(response) {
 			console.log('unsuccessful votes call');
