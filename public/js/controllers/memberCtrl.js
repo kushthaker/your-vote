@@ -1,11 +1,14 @@
-function MemberCtrl(apiService) {
+function MemberCtrl(api) {
 
-	this.apiService = apiService;
+	this.api = api;
+	this.postal_code = "";
 
-	this.hello = "hello"	
-	
+
 }
 
-
 angular.module('vote').controller('memberCtrl', MemberCtrl);
+
+MemberCtrl.prototype.requestVotes = function() {
+	this.api.requestVotes(this.postal_code);
+};
 

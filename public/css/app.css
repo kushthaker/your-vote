@@ -1,30 +1,5 @@
 /* app css stylesheet */
 
-body, html {
-	margin: 0;
-	height: 100%;
-	background-color: #bd6617;
-    font-family: 'Open Sans', sans-serif;
-}
-
-
-body .signup-form {
-	font-family: 'Open Sans', sans-serif;
-	margin-top: 230px;
-  text-align: center;
-  color: white;
-}
-
-
-a {
-  color: white;
-}
-
-a:focus, a:hover {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-
 /*
 
 COLOR PALLET - 
@@ -36,63 +11,6 @@ COLOR PALLET -
 #ec994f - lightest
 
 */
-
-/*BOOTSTRAP OVERRIDE*/
-
-
-#signup-form h2 {
-	color: white;
-	font-size: 40px;
-	margin: 20px;
-}
-
-#signup-form p { 
-  font-size: 20px; 
-  margin-top: 50px;
-}
-
-.form-control {
-  display: block;
-  width: 40%;
-  margin: 0 auto;
-  height: 55px;
-  padding: 6px 12px;
-  font-size: 18px;
-  line-height: 1.42857143;
-  color: #FFF;
-  background-color: #ec994f;
-  border: 0px;
-  border-radius: 0px;
-}
-
-.form-control:focus {
-  border: 2px solid #FFFFFF;
-  opacity: 0.8;
-}
-
-input[type=submit]{
-  color: white;
-  background-color: #e57f22;
-}
-
-input[type=submit]:hover {
-  color: #FFFFFF;
-  background-color: #8f4d12;
-}
-
-.form-control::-webkit-input-placeholder { 
-	color: #FFFFFF; 
-}
-.form-control:-moz-placeholder { 
-	color: #FFFFFF; 
-}
-.form-control::-moz-placeholder { 
-	color: #FFFFFF; 
-}
-.form-control:-ms-input-placeholder { 
-	color: #FFFFFF; 
-}
-
 
 /*MEDIA QUERIES*/
 
