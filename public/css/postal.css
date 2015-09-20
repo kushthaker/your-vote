@@ -8,7 +8,7 @@ body, html {
 }
 
 
-body .signup-form {
+body .postal-form {
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 230px;
   text-align: center;
@@ -44,21 +44,21 @@ COLOR PALLET -
 /*BOOTSTRAP OVERRIDE*/
 
 
-.signup-form h2 {
+.postal-form h2 {
 	color: white;
 	font-size: 40px;
 	margin: 20px;
 }
 
-.signup-form p { 
-  font-size: 20px; 
+.postal-form p { 
+  font-size: 25px; 
   margin-top: 50px;
   color: white;
 }
 
 .form-control {
   display: block;
-  width: 40%;
+  width: 370px;
   margin: 0 auto;
   height: 55px;
   padding: 6px 12px;
@@ -68,6 +68,7 @@ COLOR PALLET -
   background-color: #ec994f;
   border: 0px;
   border-radius: 0px;
+  position: relative;
 }
 
 .form-control:focus {
@@ -75,29 +76,40 @@ COLOR PALLET -
   opacity: 0.8;
 }
 
-button[type=submit]{
+input[type=submit]{
   color: white;
   background-color: #e57f22;
 }
 
-button[type=submit]:hover {
+input[type=submit]:hover {
   color: #FFFFFF;
   background-color: #8f4d12;
 }
 
 .form-control::-webkit-input-placeholder { 
-	color: #FFFFFF; 
+	color: #FFFFFF;
+  font-weight: 100;
+  font-size: 16px;
+  padding: 2px;
 }
 .form-control:-moz-placeholder { 
-	color: #FFFFFF; 
+	color: #FFFFFF;
+  font-weight: 100;
 }
 .form-control::-moz-placeholder { 
-	color: #FFFFFF; 
+	color: #FFFFFF;
+  font-weight: 100;
 }
 .form-control:-ms-input-placeholder { 
-	color: #FFFFFF; 
+	color: #FFFFFF;
+  font-weight: 100;
 }
 
+.postal-input {
+  font-weight: 100;
+  font-size: 11px;
+  margin-top: 2px;
+}
 
 
 

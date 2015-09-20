@@ -20,7 +20,7 @@ ApiService.prototype.requestVotes = function(postal_code) {
 			console.log(response);
 		})
 		.catch(function(response) {
-			console.log('unsuccessful votes call')
+			console.log('unsuccessful votes call');
 		});
 };
 
