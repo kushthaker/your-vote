@@ -8,8 +8,9 @@ function MemberCtrl(api, $location) {
 	this.mp = this.api.getMPData();
 
 	this.mpInfo = this.mp.mpInfo;
-	this.mpBallots = this.mp.mpBallots;
 
+	this.mpBallots = this.filterBallots();
+	
 }
 
 angular.module('vote').controller('memberCtrl', MemberCtrl);
@@ -49,6 +50,16 @@ MemberCtrl.prototype.getMPData = function() {
 	return
 };
 
+MemberCtrl.prototype.filterBallots = function() {
+
+	var self = this;
+
+	return self.mp.mpBallots.filter(function(curr) {
+		if (curr.bill) {
+			return curr;
+		}
+	})
+}
 
 
 
