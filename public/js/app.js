@@ -8,6 +8,7 @@ app.config(function($routeProvider) {
   })
   .when('/member', {
     templateUrl: '../views/partials/member.html',
+    controller: 'memberCtrl as ctrl'
   })
   .otherwise({
     redirectTo: '/'

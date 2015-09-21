@@ -5,8 +5,10 @@ function MemberCtrl(api, $location) {
 	this.postal_code = "";
 	this.error = false;
 
-	this.mpInfo = {};
-	this.mpBallots = {};
+	this.mp = this.api.getMPData();
+
+	this.mpInfo = this.mp.mpInfo;
+	this.mpBallots = this.mp.mpBallots;
 
 }
 
@@ -42,6 +44,13 @@ MemberCtrl.prototype.requestVotes = function() {
 	}
 	
 };
+
+MemberCtrl.prototype.getMPData = function() {
+	return
+};
+
+
+
 
 
 
