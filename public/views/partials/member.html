@@ -7,11 +7,19 @@
 <body>
 	<div class="container">
 		<div class="row">
-				<h1>{{ ctrl.mpInfo.name }}</h1>
-				<p> {{ctrl.mpInfo.email }} </p>
-			<div class="col-sm-12" ng-repeat="ballot in ctrl.mpBallots">
-				<h3>{{ballot.ballot}}</h3>
-				<p>{{ballot.bill.name.en}}</p>
+			<div class="col-sm-12">
+				<div class="text-center">
+					<img ng-src="{{ctrl.imgURL + ctrl.mpInfo.image}}"/>
+					<h1>{{ ctrl.mpInfo.name }}</h1>
+					<p>{{}}</p>
+					<p>{{ctrl.mpInfo.email }}</p>
+				</div>
+
+				<div class="text-left" ng-repeat="ballot in ctrl.mpBallots">
+					<h3>{{ballot.ballot}}</h3>
+					<p>{{ballot.bill.name.en}}</p>
+					<a href="{{ballot.bill.text_url}}">More</a></a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -22,4 +30,4 @@
 
 
 
-<pre>{{ ctrl.mpBallots | json }}</pre>
+<pre>{{ ctrl.mpInfo | json }}</pre>

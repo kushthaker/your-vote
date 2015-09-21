@@ -10,6 +10,8 @@ function MemberCtrl(api, $location) {
 	this.mpInfo = this.mp.mpInfo;
 
 	this.mpBallots = this.filterBallots();
+
+	this.imgURL = 'http://api.openparliament.ca';
 	
 }
 
