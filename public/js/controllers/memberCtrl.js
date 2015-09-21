@@ -26,13 +26,13 @@ MemberCtrl.prototype.requestVotes = function() {
 			self.mpInfo = JSON.parse(data.MP);
 			self.mpBallots = data.ballots.map(function (curr) {
 
-				if (curr.bill != null) {
+				if (curr.bill) {
 					curr.bill = JSON.parse(curr.bill);
 				}
 
 				curr.vote = JSON.parse(curr.vote);
 				return curr;
-				
+
 			});
 		});
 	}
